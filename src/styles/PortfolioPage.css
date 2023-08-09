@@ -2,3 +2,30 @@
 .portfolio {
    padding: 20px;
 }
+
+.projects {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+}
+
+.project {
+   border: 1px solid #ccc;
+   padding: 20px;
+   border-radius: 5px;
+}
+
+.video-preview video {
+   width: 100%;
+   max-width: 300px;
+}
+
+.project-title {
+   margin: 10px 0;
+}
+
+.project-details,
+.technical-details {
+   font-size: 14px;
+   margin: 5px 0;
+}

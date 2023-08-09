@@ -2,3 +2,44 @@
 .home {
    padding: 20px;
 }
+
+.introduction {
+   font-weight: normal;
+}
+
+.showcase {
+   margin: 20px 0;
+}
+
+.showcase video {
+   width: 100%;
+   max-width: 600px;
+}
+
+.cta-buttons {
+   display: flex;
+   gap: 20px;
+   margin: 20px 0;
+}
+
+.cta-buttons button {
+   background-color: #007bff;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   transition-duration: 0.4s;
+   border-radius: 5px;
+}
+
+.cta-buttons button:hover {
+   background-color: #0056b3;
+}
+
+.services-overview {
+   /* Add any specific styling for this section here */
+}
