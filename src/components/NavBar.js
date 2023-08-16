@@ -5,7 +5,9 @@ import "../styles/NavBar.css";
 function NavBar() {
    return (
       <nav className="navbar">
-         <h1 className="title">Closed On Mondays</h1>
+         <Link to="/" className="title-link">
+            <h1 className="title">Closed On Mondays</h1>
+         </Link>
          <div className="links">
             <Link to="/">Home</Link>
             <Link to="/portfolio">Portfolio</Link>

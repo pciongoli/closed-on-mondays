@@ -2,28 +2,33 @@
 import React from "react";
 import "../styles/PortfolioPage.css";
 
+const projects = [
+   {
+      videoUrl: "https://assets.codepen.io/7125791/video+%281080p%29.mp4",
+      title: "Project Title 1",
+      details: "Description and details about the project...",
+      technicalDetails: "Technical details, software used, etc...",
+   },
+   // Add more project objects here
+];
+
 const PortfolioPage = () => (
    <div className="portfolio">
       <h1>Portfolio</h1>
       <div className="projects">
-         {/* Example project */}
-         <div className="project">
-            <div className="video-preview">
-               <video controls>
-                  <source src="project1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-               </video>
+         {projects.map((project, index) => (
+            <div className="project" key={index}>
+               <div className="video-preview">
+                  <video controls>
+                     <source src={project.videoUrl} type="video/mp4" />
+                     Your browser does not support the video tag.
+                  </video>
+               </div>
+               <h3 className="project-title">{project.title}</h3>
+               <p className="project-details">{project.details}</p>
+               <p className="technical-details">{project.technicalDetails}</p>
             </div>
-            <h3 className="project-title">Project Title 1</h3>
-            <p className="project-details">
-               Description and details about the project...
-            </p>
-            <p className="technical-details">
-               Technical details, software used, etc...
-            </p>
-         </div>
-
-         {/* You can add more projects similarly */}
+         ))}
       </div>
    </div>
 );
