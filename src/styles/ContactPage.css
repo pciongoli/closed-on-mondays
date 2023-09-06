@@ -2,3 +2,61 @@
 .contact {
    padding: 20px;
 }
+
+.contact-content {
+   display: flex;
+   gap: 40px;
+   margin-top: 20px;
+}
+
+.contact-form form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.contact-form label {
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   width: 100%;
+}
+
+.contact-form button {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+   background-color: #0056b3;
+}
+
+.contact-details {
+   flex: 1;
+}
+
+.contact-details h2 {
+   margin-bottom: 20px;
+}
+
+.contact-details p {
+   margin-bottom: 10px;
+}
+
+.contact-details img {
+   margin-top: 20px;
+   width: 100%;
+   border-radius: 5px;
+}

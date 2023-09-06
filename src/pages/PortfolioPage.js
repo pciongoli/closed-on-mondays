@@ -8,31 +8,41 @@ const projects = [
       title: "Project Title 1",
       details: "Description and details about the project...",
       technicalDetails: "Technical details, software used, etc...",
+      category: "Commercial",
    },
-   ,
    {
       videoUrl: "https://assets.codepen.io/7125791/video+%281080p%29.mp4",
       title: "Project Title 4",
       details: "Description and details about the fourth project...",
       technicalDetails: "Technical details, software used, etc...",
+      category: "Documentary",
    },
    {
       videoUrl: "https://assets.codepen.io/7125791/video+%281080p%29.mp4",
       title: "Project Title 3",
       details: "Description and details about the third project...",
       technicalDetails: "Technical details, software used, etc...",
+      category: "Corporate",
    },
    {
       videoUrl: "https://assets.codepen.io/7125791/video+%281080p%29.mp4",
       title: "Project Title 2",
       details: "Description and details about the second project...",
       technicalDetails: "Technical details, software used, etc...",
-   }, // Add more project objects here
+      category: "Wedding",
+   },
 ];
 
 const PortfolioPage = () => (
    <div className="portfolio">
       <h1>Portfolio</h1>
+      <div className="filters">
+         <button>All</button>
+         <button>Commercial</button>
+         <button>Documentary</button>
+         <button>Corporate</button>
+         <button>Wedding</button>
+      </div>
       <div className="projects">
          {projects.map((project, index) => (
             <div className="project" key={index}>

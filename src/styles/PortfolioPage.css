@@ -3,34 +3,25 @@
    padding: 20px;
 }
 
-.projects {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   gap: 20px;
+.filters {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
 }
 
-.project {
-   border: 1px solid #ccc;
-   padding: 20px;
+.filters button {
+   background-color: #ddd;
+   padding: 5px 10px;
+   border: none;
    border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
 }
 
-.video-preview video {
-   width: 100%;
-   max-width: 300px;
+.filters button:hover {
+   background-color: #ccc;
 }
 
-.project-title {
-   margin: 10px 0;
-}
-
-.project-details,
-.technical-details {
-   font-size: 14px;
-   margin: 5px 0;
-}
-
-/* Improved grid layout for responsiveness */
 .projects {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -41,24 +32,28 @@
    border: 1px solid #ccc;
    padding: 20px;
    border-radius: 5px;
-   transition: transform 0.3s ease, box-shadow 0.3s ease; /* transition for smooth hover effect */
+   position: relative;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for project containers */
 .project:hover {
-   transform: scale(1.05); /* Slightly enlarge on hover */
-   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+   transform: scale(1.05);
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-preview {
+   position: relative;
 }
 
 .video-preview video {
    width: 100%;
-   border-radius: 5px; /* Rounded corners for videos */
+   border-radius: 5px;
 }
 
 .project-title {
    margin: 10px 0;
-   font-size: 18px; /* Larger font for titles */
-   font-weight: bold; /* Bold font for titles */
+   font-size: 18px;
+   font-weight: bold;
 }
 
 .project-details,
