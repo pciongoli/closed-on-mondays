@@ -6,3 +6,11 @@
    text-align: center;
    width: 100%;
 }
+
+/* Responsive styling for the footer on smaller screens */
+@media (max-width: 768px) {
+   .footer {
+      padding: 20px; /* Increase padding */
+      font-size: 0.9em; /* Adjust font size */
+   }
+}

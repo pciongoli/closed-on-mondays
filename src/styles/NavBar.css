@@ -30,3 +30,16 @@
 .links a:hover {
    text-decoration: underline;
 }
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+   .navbar {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+   }
+
+   .links a {
+      display: block; /* Each link takes the full width */
+      padding: 5px 0; /* Add some vertical padding for easier tapping */
+      text-align: center; /* Center the links */
+   }
+}

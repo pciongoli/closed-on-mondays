@@ -43,3 +43,29 @@
 .services-overview {
    /* Add any specific styling for this section here */
 }
+
+/* Enhanced styling for the introduction */
+.introduction {
+   font-weight: bold;
+   font-size: 1.5em;
+   margin-top: 20px;
+}
+
+/* Styling for the showcase caption */
+.showcase-caption {
+   margin-top: 10px;
+   font-style: italic;
+}
+
+/* Enhancing the CTA buttons */
+.cta-buttons button {
+   background-color: #ff5733; /* More vibrant color */
+   padding: 15px 25px; /* Larger buttons */
+   font-size: 18px; /* Larger font */
+}
+
+/* Styling for the services overview */
+.services-overview ul {
+   list-style-type: disc;
+   margin-left: 20px;
+}
