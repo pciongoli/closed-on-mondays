@@ -10,7 +10,7 @@ const Footer = () => (
             <p>Careers</p>
          </div>
          <div className="footer-contact">
-            <p>Email: contact@closedmonday.com</p>
+            <p>Email: contact@closedmonday.media</p>
             <p>Phone: +123 456 7890</p>
             <p className="copyright">
                © 2023 Closed Monday. All rights reserved.
