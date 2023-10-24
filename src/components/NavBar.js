@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "../styles/NavBar.css";
 
 const NavBar = () => {
@@ -11,15 +13,14 @@ const NavBar = () => {
    return (
       <nav className="navbar">
          <div className="nav-logo">
-            <h2>Closed On Mondays</h2>
+            <Link to="/" className="navbar-logo-link">
+               <h2>Closed Monday</h2>
+            </Link>
          </div>
          <div className="menu-icon" onClick={toggleMenu}>
             <i className="fas fa-bars"></i>
          </div>
          <ul className={isOpen ? "nav-links active" : "nav-links"}>
-            <li>
-               <a href="/">Home</a>
-            </li>
             <li>
                <a href="/portfolio">Portfolio</a>
             </li>

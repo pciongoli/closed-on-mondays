@@ -1,15 +1,18 @@
 /* src/pages/PortfolioPage.css */
 .portfolio {
+   font-family: Arial, sans-serif;
    padding: 20px;
 }
 
 .filters {
+   font-family: Arial, sans-serif;
    display: flex;
    gap: 10px;
    margin-bottom: 20px;
 }
 
 .filters button {
+   font-family: Arial, sans-serif;
    background-color: #ddd;
    padding: 5px 10px;
    border: none;
@@ -19,16 +22,19 @@
 }
 
 .filters button:hover {
+   font-family: Arial, sans-serif;
    background-color: #ccc;
 }
 
 .projects {
+   font-family: Arial, sans-serif;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    gap: 20px;
 }
 
 .project {
+   font-family: Arial, sans-serif;
    border: 1px solid #ccc;
    padding: 20px;
    border-radius: 5px;
@@ -37,20 +43,24 @@
 }
 
 .project:hover {
+   font-family: Arial, sans-serif;
    transform: scale(1.05);
    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .video-preview {
+   font-family: Arial, sans-serif;
    position: relative;
 }
 
 .video-preview video {
+   font-family: Arial, sans-serif;
    width: 100%;
    border-radius: 5px;
 }
 
 .project-title {
+   font-family: Arial, sans-serif;
    margin: 10px 0;
    font-size: 18px;
    font-weight: bold;
@@ -58,6 +68,7 @@
 
 .project-details,
 .technical-details {
+   font-family: Arial, sans-serif;
    font-size: 14px;
    margin: 5px 0;
 }

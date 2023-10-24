@@ -12,7 +12,6 @@
 }
 
 .menu-icon {
-   display: none;
    font-size: 2rem;
    cursor: pointer;
 }
@@ -20,8 +19,19 @@
 .nav-links {
    list-style: none;
    padding: 0;
+   display: none; /* Initially hide nav links */
+   flex-direction: column;
+   gap: 0;
+   position: absolute;
+   top: 60px;
+   right: 40px;
+   background-color: #222;
+   border-radius: 5px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.active {
    display: flex;
-   gap: 20px;
 }
 
 .nav-links li a {
@@ -35,26 +45,18 @@
    background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-   .menu-icon {
-      display: block;
-   }
+.nav-logo {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
 
-   .nav-links {
-      display: none;
-      flex-direction: column;
-      gap: 0;
-      position: absolute;
-      top: 60px;
-      right: 40px;
-      background-color: #222;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   }
+.nav-links {
+   z-index: 1000; /* Ensure nav contents are in front of other content */
+}
 
-   .nav-links.active {
-      display: none;
-      display: flex;
-   }
+/* Remove the media query that toggles display of the menu icon and nav links */
+
+.navbar {
+   flex-direction: row-reverse; /* Reverse the order of child elements */
 }

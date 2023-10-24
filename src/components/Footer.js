@@ -1,11 +1,52 @@
-// src/components/Footer.js
 import React from "react";
 import "../styles/Footer.css";
 
 const Footer = () => (
    <footer className="footer">
-      <p>© 2023 Closed On Mondays. All rights reserved.</p>
-      {/* Add any additional footer content here */}
+      <div className="footer-content">
+         <div className="footer-logo">ClosedMonday</div>
+         <div>
+            <p>Random Info 1</p>
+            <p>Random Info 2</p>
+         </div>
+         <div className="footer-contact">
+            <p>Email: contact@closedmonday.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p className="copyright">
+               © 2023 Closed Monday. All rights reserved.
+            </p>
+         </div>
+         <div className="footer-icons">
+            <a
+               href="https://facebook.com"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+               <i className="fab fa-facebook-f"></i>
+            </a>
+            <a
+               href="https://twitter.com"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+               <i className="fab fa-twitter"></i>
+            </a>
+            <a
+               href="https://instagram.com"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+               <i className="fab fa-instagram"></i>
+            </a>
+            <a
+               href="https://linkedin.com"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+               <i className="fab fa-linkedin-in"></i>
+            </a>
+         </div>
+      </div>
    </footer>
 );
 
