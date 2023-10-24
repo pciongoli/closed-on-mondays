@@ -4,7 +4,7 @@
    justify-content: space-between;
    align-items: center;
    padding: 20px 40px;
-   background-color: #2a2a2a; /* Darker background color */
+   background-color: black; /* Darker background color */
 }
 
 .footer-logo {
@@ -16,7 +16,6 @@
 
 .copyright {
    color: gold;
-   align-self: flex-start; /* Align to the start */
 }
 
 .footer-content {

@@ -6,8 +6,8 @@ const Footer = () => (
       <div className="footer-content">
          <div className="footer-logo">ClosedMonday</div>
          <div>
-            <p>Random Info 1</p>
-            <p>Random Info 2</p>
+            <p>About Us</p>
+            <p>Careers</p>
          </div>
          <div className="footer-contact">
             <p>Email: contact@closedmonday.com</p>

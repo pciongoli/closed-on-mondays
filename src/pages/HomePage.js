@@ -1,76 +1,63 @@
-// src/pages/HomePage.js
 import React from "react";
-import videoSrc from "../assets/video/homepage-video.mp4";
+import heroImage from "../assets/image/hero-image.png";
+import collaborator1 from "../assets/image/collaborator1.png";
+import collaborator2 from "../assets/image/collaborator2.png";
 import "../styles/HomePage.css";
 
 const HomePage = () => (
    <div className="home">
       <div className="hero">
-         <img
-            src="https://via.placeholder.com/1920x1080"
-            alt="Hero Image"
-            className="hero-image"
-         />
-         <h1>Welcome to Closed Monday</h1>
+         <img src={heroImage} alt="Hero Image" className="hero-image" />
       </div>
 
       <div className="clients-section">
-         <h2>Who We Work With</h2>
+         <h2>Our Collaborators</h2>
          <div className="client-images">
-            <img src="https://via.placeholder.com/150" alt="Client 1" />
-            <img src="https://via.placeholder.com/150" alt="Client 2" />
-            <img src="https://via.placeholder.com/150" alt="Client 3" />
-            <img src="https://via.placeholder.com/150" alt="Client 4" />
-            <img src="https://via.placeholder.com/150" alt="Client 5" />
+            <img src={collaborator1} alt="Collaborator 1" />
+            <img src={collaborator2} alt="Collaborator 2" />
          </div>
 
          <div className="reviews-section">
-            <h2>Watch the Reviews</h2>
+            <h2>
+               Don't just take our word for it. See what people say about us!
+            </h2>
             <div className="review-videos">
-               <video width="200" controls>
-                  <source
-                     src="https://via.placeholder.com/200x112"
-                     type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-               </video>
-               <video width="200" controls>
-                  <source
-                     src="https://via.placeholder.com/200x112"
-                     type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-               </video>
-               <video width="200" controls>
-                  <source
-                     src="https://via.placeholder.com/200x112"
-                     type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-               </video>
-               <video width="200" controls>
-                  <source
-                     src="https://via.placeholder.com/200x112"
-                     type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-               </video>
-               <video width="200" controls>
-                  <source
-                     src="https://via.placeholder.com/200x112"
-                     type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-               </video>
-            </div>
-
-            <div className="action-buttons">
-               <button onClick={() => (window.location.href = "/contact")}>
-                  Get in Contact with Us
-               </button>
-               <button onClick={() => (window.location.href = "/services")}>
-                  See How We Can Work with You
-               </button>
+               <iframe
+                  width="200"
+                  height="400"
+                  src="https://www.tiktok.com/embed/v2/6914690665511144710?lang=en-US"
+                  frameborder="0"
+                  allowfullscreen
+               ></iframe>
+               <iframe
+                  width="200"
+                  height="400"
+                  src="https://www.tiktok.com/embed/v2/6914338379173743878?lang=en-US"
+                  frameborder="0"
+                  allowfullscreen
+               ></iframe>
+               <iframe
+                  width="200"
+                  height="400"
+                  src="https://www.tiktok.com/embed/v2/6914337171306466566?lang=en-US"
+                  frameborder="0"
+                  allowfullscreen
+               ></iframe>
+               <iframe
+                  width="200"
+                  height="400"
+                  src="https://www.tiktok.com/embed/v2/6955938582553218310?lang=en-US"
+                  frameborder="0"
+                  allowfullscreen
+               ></iframe>
+               <iframe
+                  width="200"
+                  height="400"
+                  src="https://www.tiktok.com/embed/v2/6955938582553218310?lang=en-US"
+                  frameborder="0"
+                  allowfullscreen
+               ></iframe>
+               {/* If you have more videos, you can continue to add them here */}
             </div>
          </div>
       </div>
@@ -79,6 +66,24 @@ const HomePage = () => (
          Your destination for high-quality video editing. From short clips to
          full-length productions, we bring your vision to life.
       </h2>
+      <div className="action-buttons">
+         <button onClick={() => (window.location.href = "/contact")}>
+            Get in Contact with Us
+         </button>
+         <button onClick={() => (window.location.href = "/services")}>
+            See How We Can Work with You
+         </button>
+      </div>
+
+      <div className="services-overview">
+         <h2>Services We Offer</h2>
+         <ul>
+            <li>Commercial Video Editing</li>
+            <li>Corporate Video Productions</li>
+            <li>Documentary Editing</li>
+            <li>Wedding & Event Video Editing</li>
+         </ul>
+      </div>
 
       <div className="testimonials">
          <h2>What Our Clients Say</h2>
@@ -92,25 +97,6 @@ const HomePage = () => (
             life. Can't wait for our next project!"
             <br />- Jane Smith, Documentary Producer
          </p>
-      </div>
-
-      <div className="cta-buttons">
-         <button onClick={() => (window.location.href = "/services")}>
-            View Our Services
-         </button>
-         <button onClick={() => (window.location.href = "/contact")}>
-            Contact Us Today
-         </button>
-      </div>
-
-      <div className="services-overview">
-         <h2>Services We Offer</h2>
-         <ul>
-            <li>Commercial Video Editing</li>
-            <li>Corporate Video Productions</li>
-            <li>Documentary Editing</li>
-            <li>Wedding & Event Video Editing</li>
-         </ul>
       </div>
    </div>
 );
