@@ -71,7 +71,7 @@ const HomePage = () => (
          full-length productions, we bring your vision to life.
       </h2>
 
-      <div className="reviews-section">
+      {/* <div className="reviews-section">
          <h2>Don't just take our word for it. See what people say about us!</h2>
          <div className="review-videos">
             <iframe
@@ -109,18 +109,28 @@ const HomePage = () => (
                frameborder="0"
                allowfullscreen
             ></iframe>
-            {/* If you have more videos, you can continue to add them here */}
          </div>
-      </div>
+      </div> */}
 
       <div className="services-overview">
          <h2>Services We Offer</h2>
-         <ul>
-            <li>Commercial Video Editing</li>
-            <li>Corporate Video Productions</li>
-            <li>Documentary Editing</li>
-            <li>Wedding & Event Video Editing</li>
-         </ul>
+
+         <div className="services-container">
+            <div className="services-list">
+               <ul>
+                  <li>Full podcast production</li>
+                  <li>Short form clips</li>
+                  <li>Long form</li>
+                  <li>Audio</li>
+                  <li>Project management</li>
+                  <li>TikTok video editing</li>
+               </ul>
+            </div>
+
+            <button className="explore-services-btn">
+               Explore All Our Exciting Services!
+            </button>
+         </div>
       </div>
 
       <div className="testimonials">
