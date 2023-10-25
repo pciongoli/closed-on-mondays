@@ -187,35 +187,9 @@ body {
    margin: 0 auto;
 }
 
-/* Removing the width adjustments from media queries for .spotify-widget */
-@media (min-width: 768px) {
-   .spotify-widget {
-      max-width: calc(50% - 20px);
-   }
-}
-
-@media (min-width: 1024px) {
-   .spotify-widget {
-      max-width: 33.33%;
-   }
-}
-
-@media (min-width: 1024px) {
-   .spotify-widget {
-      width: 33.33%;
-      max-width: 33.33%;
-   }
-}
-
 .spotify-widget:hover {
    transform: scale(1.02);
    transition: transform 0.3s;
-}
-
-@media (max-width: 768px) {
-   .clients-section .widgets-container {
-      overflow-x: hidden;
-   }
 }
 
 .clients-section .widgets-container::-webkit-scrollbar {
@@ -225,22 +199,6 @@ body {
 
 .clients-section .widgets-container {
    scrollbar-width: none;
-}
-
-@media (max-width: 600px) {
-   .client-images img {
-      width: 100px;
-      height: 100px;
-   }
-}
-
-@media (max-width: 1024px) {
-   .reviews-section .review-videos {
-      justify-content: flex-start;
-   }
-   .review-videos iframe:first-child {
-      margin-left: 0;
-   }
 }
 
 .services-overview ul li {
@@ -282,11 +240,6 @@ body {
 
 .explore-services-btn {
 }
-@media (max-width: 768px) {
-   .introduction {
-      display: none;
-   }
-}
 
 .testimonials .testimonial-container {
    display: flex;
@@ -320,4 +273,58 @@ body {
 .explore-services-btn:hover {
    background-color: #e64d29; /* Darken the Color on Hover */
    transform: scale(1.05); /* Slightly Enlarge the Button on Hover */
+}
+
+/* Removing the width adjustments from media queries for .spotify-widget */
+@media (min-width: 768px) {
+   .spotify-widget {
+      max-width: calc(50% - 20px);
+   }
+}
+
+@media (min-width: 1024px) {
+   .spotify-widget {
+      max-width: 33.33%;
+   }
+}
+
+@media (min-width: 1024px) {
+   .spotify-widget {
+      width: 33.33%;
+      max-width: 33.33%;
+   }
+}
+
+@media (max-width: 768px) {
+   .introduction {
+      display: none;
+   }
+}
+
+@media (max-width: 600px) {
+   .client-images img {
+      width: 100px;
+      height: 100px;
+   }
+}
+
+@media (max-width: 1024px) {
+   .reviews-section .review-videos {
+      justify-content: flex-start;
+   }
+   .review-videos iframe:first-child {
+      margin-left: 0;
+   }
+}
+
+@media (max-width: 768px) {
+   .clients-section .widgets-container {
+      overflow-x: hidden;
+   }
+}
+
+@media (max-width: 600px) {
+   .action-buttons button {
+      display: none;
+   }
 }
