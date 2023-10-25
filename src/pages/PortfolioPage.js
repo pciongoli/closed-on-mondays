@@ -3,48 +3,28 @@ import "../styles/PortfolioPage.css";
 
 const projects = [
    {
-      mediaUrl: "https://assets.codepen.io/7125791/video+%281080p%29.mp4",
-      title: "Video Title 1",
-      details: "Video description...",
+      mediaUrl:
+         "https://open.spotify.com/embed/show/7xuYMlfFAXUfReoHKGHjb6?utm_source=generator",
+      title: "JOHNNY DRINKS",
+      details: "Description for JOHNNY DRINKS...",
       technicalDetails: "Technical details...",
-      type: "video",
-   },
-   {
-      mediaUrl: "https://assets.codepen.io/7125791/video+%281080p%29.mp4",
-      title: "Video Title 2",
-      details: "Video description...",
-      technicalDetails: "Technical details...",
-      type: "video",
+      type: "iframe",
    },
    {
       mediaUrl:
-         "https://www.tiktok.com/embed/v2/6914690665511144710?lang=en-US",
-      title: "TikTok Title 1",
-      details: "TikTok description...",
+         "https://open.spotify.com/embed/show/5NDVTKGjiZhrth5hJbfvsA/video?utm_source=generator",
+      title: "UNDER THE INFLUENCE",
+      details: "Description for UNDER THE INFLUENCE...",
       technicalDetails: "Technical details...",
-      type: "tiktok",
+      type: "iframe",
    },
    {
       mediaUrl:
-         "https://www.tiktok.com/embed/v2/6914338379173743878?lang=en-US",
-      title: "TikTok Title 2",
-      details: "TikTok description...",
+         "https://open.spotify.com/embed/show/5NDVTKGjiZhrth5hJbfvsA/video?utm_source=generator",
+      title: "SUBURB TALKS",
+      details: "Description for SUBURB TALKS...",
       technicalDetails: "Technical details...",
-      type: "tiktok",
-   },
-   {
-      mediaUrl: "https://assets.codepen.io/7125791/audio_sample.mp3",
-      title: "Audio Title 1",
-      details: "Audio description...",
-      technicalDetails: "Technical details...",
-      type: "audio",
-   },
-   {
-      mediaUrl: "https://assets.codepen.io/7125791/audio_sample.mp3",
-      title: "Audio Title 2",
-      details: "Audio description...",
-      technicalDetails: "Technical details...",
-      type: "audio",
+      type: "iframe",
    },
 ];
 
@@ -69,6 +49,19 @@ const PortfolioPage = () => {
          );
       } else if (project.type === "audio") {
          return <audio controls src={project.mediaUrl}></audio>;
+      } else if (project.type === "iframe") {
+         return (
+            <iframe
+               style={{ borderRadius: "12px" }}
+               width="100%"
+               height="352"
+               src={project.mediaUrl}
+               frameborder="0"
+               allowfullscreen=""
+               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+               loading="lazy"
+            ></iframe>
+         );
       }
    };
 
@@ -76,36 +69,16 @@ const PortfolioPage = () => {
       <div className="portfolio">
          <h1>A little taste of what we do</h1>
          <div className="filters">
-            <a href="#video">Video</a>
-            <a href="#tiktok">TikTok</a>
+            <a href="#podcast">Podcast</a>
             <a href="#audio">Audio</a>
+            <a href="#video">Video</a>
          </div>
 
-         <section id="video">
+         <section id="podcasts">
             <div className="projects">
-               <h2>Video</h2>
+               <h2>Podcasts</h2>
                {projects
-                  .filter((p) => p.type === "video")
-                  .map((project, index) => (
-                     <div className="project" key={index}>
-                        <div className="media-preview">
-                           {renderMedia(project)}
-                        </div>
-                        <h3 className="project-title">{project.title}</h3>
-                        <p className="project-details">{project.details}</p>
-                        <p className="technical-details">
-                           {project.technicalDetails}
-                        </p>
-                     </div>
-                  ))}
-            </div>
-         </section>
-
-         <section id="tiktok">
-            <div className="projects">
-               <h2>TikTok</h2>
-               {projects
-                  .filter((p) => p.type === "tiktok")
+                  .filter((p) => p.type === "iframe")
                   .map((project, index) => (
                      <div className="project" key={index}>
                         <div className="media-preview">

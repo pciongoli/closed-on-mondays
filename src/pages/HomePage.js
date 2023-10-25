@@ -14,11 +14,15 @@ const HomePage = () => (
                Get in Contact with Us
             </button>
             <button onClick={() => (window.location.href = "/services")}>
-               See How We Can Work with You
+               See some of our work!{" "}
             </button>
          </div>
       </div>
 
+      <h2 className="introduction">
+         Your destination for high-quality video editing. From short clips to
+         full-length productions, we bring your vision to life.
+      </h2>
       <div className="clients-section">
          <h2>Our Collaborators</h2>
          <div className="widgets-container">
@@ -65,11 +69,6 @@ const HomePage = () => (
             </div>
          </div>
       </div>
-
-      <h2 className="introduction">
-         Your destination for high-quality video editing. From short clips to
-         full-length productions, we bring your vision to life.
-      </h2>
 
       {/* <div className="reviews-section">
          <h2>Don't just take our word for it. See what people say about us!</h2>
@@ -127,7 +126,10 @@ const HomePage = () => (
                </ul>
             </div>
 
-            <button className="explore-services-btn">
+            <button
+               className="explore-services-btn"
+               onClick={() => (window.location.href = "/services")}
+            >
                Explore All Our Exciting Services!
             </button>
          </div>
@@ -135,16 +137,23 @@ const HomePage = () => (
 
       <div className="testimonials">
          <h2>What Our Clients Say</h2>
-         <p>
-            "Closed On Mondays provided exceptional editing services for our
-            corporate videos. Highly recommended!"
-            <br />- John Doe, CEO of ABC Corp
-         </p>
-         <p>
-            "The attention to detail and creativity brought our documentary to
-            life. Can't wait for our next project!"
-            <br />- Jane Smith, Documentary Producer
-         </p>
+
+         <div className="testimonial-container">
+            <div className="avatar"></div>
+            <p>
+               "Closed On Mondays provided exceptional editing services for our
+               corporate videos. Highly recommended!"
+               <br />- John Doe, CEO of ABC Corp
+            </p>
+         </div>
+         <div className="testimonial-container">
+            <div className="avatar"></div>
+            <p>
+               "The attention to detail and creativity brought our documentary
+               to life. Can't wait for our next project!"
+               <br />- Jane Smith, Documentary Producer
+            </p>
+         </div>
       </div>
    </div>
 );
