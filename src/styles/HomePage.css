@@ -46,6 +46,7 @@
    padding: 20px;
    border-radius: 5px;
    text-align: center;
+   color: rgb(75, 64, 64);
 }
 
 .testimonials {
@@ -150,7 +151,7 @@ body {
 
 .action-buttons button {
    background-color: #ff5733;
-   color: #000000;
+   color: white;
    border: none;
    padding: 15px 25px;
    cursor: pointer;
